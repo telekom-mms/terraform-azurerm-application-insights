@@ -38,19 +38,45 @@ This module manages Azure Application Insights.
 
 ## Examples
 
+Minimal configuration to install the desired resources with the module
+
 ```hcl
 module "application_insights" {
-  source = "registry.terraform.io/T-Systems-MMS/application-insights/azurerm"
+  source = "registry.terraform.io/telekom-mms/application-insights/azurerm"
+
   application_insights = {
-    function_app = {
-      location                   = "westeurope"
-      resource_group_name        = "service-env-rg"
-      application_type           = "Node.JS"
-      internet_ingestion_enabled = true
-      internet_query_enabled     = true
-      retention_in_days          = "90"
+    aimms = {
+      resource_group_name = "rg-mms-github"
+      application_type    = "web"
+    }
+  }
+}
+```
+
+Advanced configuration to install the desired resources with the module
+
+```hcl
+module "application_insights" {
+  source = "registry.terraform.io/telekom-mms/application-insights/azurerm"
+
+  application_insights = {
+    aimms = {
+      location                              = "westeurope"
+      resource_group_name                   = "rg-mms-github"
+      application_type                      = "web"
+      daily_data_cap_in_gb                  = 10
+      daily_data_cap_notifications_disabled = false
+      retention_in_days                     = 90
+      sampling_percentage                   = 100
+      disable_ip_masking                    = false
+      local_authentication_disabled         = false
+      internet_ingestion_enabled            = true
+      internet_query_enabled                = true
+      force_customer_storage_for_profiler   = false
       tags = {
-        service = "service_name"
+        project     = "mms-github"
+        environment = terraform.workspace
+        managed-by  = "terraform"
       }
     }
   }

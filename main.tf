@@ -1,8 +1,10 @@
 /**
- * # application_insights
- *
- * This module manages Azure Application Insights.
- *
+* # application-insights
+*
+* This module manages the azurerm application-insights resources, see https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs.
+*
+* For more information about the module structure see https://telekom-mms.github.io/terraform-template.
+*
 */
 
 resource "azurerm_application_insights" "application_insights" {
