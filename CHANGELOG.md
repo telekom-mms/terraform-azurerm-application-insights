@@ -1,18 +1,44 @@
 # Changelog
 
-## [1.0.0](https://github.com/T-Systems-MMS/terraform-azurerm-application-insights/tree/1.0.0) (2022-07-25)
+## [2.0.0](https://github.com/telekom-mms/terraform-azurerm-application-insights/tree/2.0.0) (2026-03-30)
 
-[Full Changelog](https://github.com/T-Systems-MMS/terraform-azurerm-application-insights/compare/0.0.1...1.0.0)
+[Full Changelog](https://github.com/telekom-mms/terraform-azurerm-application-insights/compare/1.0.1...2.0.0)
 
 **Merged pull requests:**
 
-- Update creyD/prettier\_action action to v3.3 [\#4](https://github.com/T-Systems-MMS/terraform-azurerm-application-insights/pull/4) ([renovate[bot]](https://github.com/apps/renovate))
-- Update actions/checkout action to v2.4.2 [\#3](https://github.com/T-Systems-MMS/terraform-azurerm-application-insights/pull/3) ([renovate[bot]](https://github.com/apps/renovate))
-- add examples and renovate config [\#2](https://github.com/T-Systems-MMS/terraform-azurerm-application-insights/pull/2) ([michaelamattes](https://github.com/michaelamattes))
+- Update .terraform-docs.yml [\#19](https://github.com/telekom-mms/terraform-azurerm-application-insights/pull/19) ([mikaEz](https://github.com/mikaEz))
+- Update config [\#18](https://github.com/telekom-mms/terraform-azurerm-application-insights/pull/18) ([mikaEz](https://github.com/mikaEz))
+- Update config [\#17](https://github.com/telekom-mms/terraform-azurerm-application-insights/pull/17) ([mikaEz](https://github.com/mikaEz))
+- refactor module an upgrade to azurermv4 [\#16](https://github.com/telekom-mms/terraform-azurerm-application-insights/pull/16) ([mikaEz](https://github.com/mikaEz))
 
-## [0.0.1](https://github.com/T-Systems-MMS/terraform-azurerm-application-insights/tree/0.0.1) (2022-07-21)
+## [1.0.1](https://github.com/telekom-mms/terraform-azurerm-application-insights/tree/1.0.1) (2024-08-28)
 
-[Full Changelog](https://github.com/T-Systems-MMS/terraform-azurerm-application-insights/compare/a1824f9cf048f1d17b35242e4402295b689af74f...0.0.1)
+[Full Changelog](https://github.com/telekom-mms/terraform-azurerm-application-insights/compare/1.0.0...1.0.1)
+
+**Merged pull requests:**
+
+- Pin version of azurerm to compatible state [\#15](https://github.com/telekom-mms/terraform-azurerm-application-insights/pull/15) ([schurzi](https://github.com/schurzi))
+- add Renovate Dependency Dashboard and automatic merge on patch updates [\#12](https://github.com/telekom-mms/terraform-azurerm-application-insights/pull/12) ([mikaEz](https://github.com/mikaEz))
+- Update actions/checkout action to v3.2.0 [\#11](https://github.com/telekom-mms/terraform-azurerm-application-insights/pull/11) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action to v3.1.0 [\#10](https://github.com/telekom-mms/terraform-azurerm-application-insights/pull/10) ([renovate[bot]](https://github.com/apps/renovate))
+- Update hashicorp/setup-terraform action to v2 [\#9](https://github.com/telekom-mms/terraform-azurerm-application-insights/pull/9) ([renovate[bot]](https://github.com/apps/renovate))
+- Update creyD/prettier\_action action to v4 [\#8](https://github.com/telekom-mms/terraform-azurerm-application-insights/pull/8) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action to v3 [\#7](https://github.com/telekom-mms/terraform-azurerm-application-insights/pull/7) ([renovate[bot]](https://github.com/apps/renovate))
+- Update github-actions-x/commit action to v2.9 [\#6](https://github.com/telekom-mms/terraform-azurerm-application-insights/pull/6) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [1.0.0](https://github.com/telekom-mms/terraform-azurerm-application-insights/tree/1.0.0) (2022-07-25)
+
+[Full Changelog](https://github.com/telekom-mms/terraform-azurerm-application-insights/compare/0.0.1...1.0.0)
+
+**Merged pull requests:**
+
+- Update creyD/prettier\_action action to v3.3 [\#4](https://github.com/telekom-mms/terraform-azurerm-application-insights/pull/4) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action to v2.4.2 [\#3](https://github.com/telekom-mms/terraform-azurerm-application-insights/pull/3) ([renovate[bot]](https://github.com/apps/renovate))
+- add examples and renovate config [\#2](https://github.com/telekom-mms/terraform-azurerm-application-insights/pull/2) ([mikaEz](https://github.com/mikaEz))
+
+## [0.0.1](https://github.com/telekom-mms/terraform-azurerm-application-insights/tree/0.0.1) (2022-07-21)
+
+[Full Changelog](https://github.com/telekom-mms/terraform-azurerm-application-insights/compare/a1824f9cf048f1d17b35242e4402295b689af74f...0.0.1)
 
 
 
