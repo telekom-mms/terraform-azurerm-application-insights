@@ -1,13 +1,26 @@
 output "application_insights" {
-  description = "azurerm_application_insights"
+  description = "Outputs all attributes of application_insights."
   value = {
     for application_insights in keys(azurerm_application_insights.application_insights) :
     application_insights => {
-      id                  = azurerm_application_insights.application_insights[application_insights].id
-      name                = azurerm_application_insights.application_insights[application_insights].name
-      app_id              = azurerm_application_insights.application_insights[application_insights].app_id
-      instrumentation_key = azurerm_application_insights.application_insights[application_insights].instrumentation_key
-      connection_string   = azurerm_application_insights.application_insights[application_insights].connection_string
+      for key, value in azurerm_application_insights.application_insights[application_insights] :
+      key => value
+    }
+  }
+}
+
+output "variables" {
+  description = "Displays all configurable variables passed by the module. __default__ = predefined values per module. __merged__ = result of merging the default values and custom values passed to the module"
+  value = {
+    default = {
+      for variable in keys(local.default) :
+      variable => local.default[variable]
+    }
+    merged = {
+      application_insights = {
+        for key in keys(var.application_insights) :
+        key => local.application_insights[key]
+      }
     }
   }
 }

@@ -11,14 +11,14 @@ locals {
       name                                  = ""
       daily_data_cap_in_gb                  = null
       daily_data_cap_notifications_disabled = null
-      retention_in_days                     = 30
+      retention_in_days                     = 30 # defined default
       sampling_percentage                   = null
-      disable_ip_masking                    = false
+      disable_ip_masking                    = null
       workspace_id                          = null
-      local_authentication_disabled         = false
-      internet_ingestion_enabled            = false
-      internet_query_enabled                = false
-      force_customer_storage_for_profiler   = false
+      local_authentication_disabled         = null
+      internet_ingestion_enabled            = false # defined default
+      internet_query_enabled                = false # defined default
+      force_customer_storage_for_profiler   = null
       tags                                  = {}
     }
   }
